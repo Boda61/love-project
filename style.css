@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff1f3;
+  color: #1d1d1d;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-content button {
+  padding: 15px 40px;
+  border-radius: 40px;
+  border: none;
+  background: #e63946;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* MESSAGE */
+.message {
+  padding: 80px 20px;
+}
+
+.message h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.message p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px 20px;
+}
+
+.gallery img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* SECRET */
+.secret {
+  padding: 80px 20px;
+  background: #ffe4e9;
+}
+
+.secret input {
+  padding: 12px;
+  width: 260px;
+  border-radius: 20px;
+  border: none;
+  margin-top: 20px;
+}
+
+.secret button {
+  margin-top: 15px;
+  padding: 12px 30px;
+  border-radius: 20px;
+  border: none;
+  background: #e63946;
+  color: white;
+  cursor: pointer;
+}
+
+#error {
+  color: #e63946;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.final-text {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #e63946;
+}
+
+/* FLOATING HEARTS */
+.hearts::before {
+  content: "❤️ ❤️ ❤️ ❤️ ❤️";
+  position: fixed;
+  width: 100%;
+  top: -20px;
+  animation: float 10s linear infinite;
+  opacity: 0.2;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(120vh); }
+}
+.love-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.love-popup-content {
+  background: white;
+  color: #e63946;
+  padding: 40px;
+  border-radius: 25px;
+  width: 300px;
+  text-align: center;
+}
+
+.love-popup button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  border: none;
+  background: #e63946;
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
